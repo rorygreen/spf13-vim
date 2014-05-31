@@ -632,6 +632,19 @@
                 autocmd BufWritePost *.hs GhcModCheckAndLintAsync
             endif
 
+            let g:ycm_semantic_triggers =  {
+              \   'c' : ['->', '.'],
+              \   'objc' : ['->', '.'],
+              \   'ocaml' : ['.', '#'],
+              \   'cpp,objcpp' : ['->', '.', '::'],
+              \   'perl' : ['->'],
+              \   'php' : ['->', '::'],
+              \   'cs,java,javascript,d,haskell,vim,python,perl6,scala,vb,elixir,go' : ['.'],
+              \   'ruby' : ['.', '::'],
+              \   'lua' : ['.', ':'],
+              \   'erlang' : [':'],
+              \ }
+
             " For snippet_complete marker.
             if !exists("g:spf13_no_conceal")
                 if has('conceal')
@@ -717,8 +730,8 @@
                         endif
                     endfunction
 
-                    " <CR> close popup and save indent or expand snippet 
-                    imap <expr> <CR> CleverCr() 
+                    " <CR> close popup and save indent or expand snippet
+                    imap <expr> <CR> CleverCr()
                     " <C-h>, <BS>: close popup and delete backword char.
                     inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
                     inoremap <expr><C-y> neocomplete#close_popup()
@@ -732,7 +745,7 @@
                 function! CleverTab()
                     if pumvisible()
                         return "\<C-n>"
-                    endif 
+                    endif
                     let substr = strpart(getline('.'), 0, col('.') - 1)
                     let substr = matchstr(substr, '[^ \t]*$')
                     if strlen(substr) == 0
@@ -824,7 +837,7 @@
                         endif
                     endfunction
 
-                    " <CR> close popup and save indent or expand snippet 
+                    " <CR> close popup and save indent or expand snippet
                     imap <expr> <CR> CleverCr()
 
                     " <CR>: close popup
