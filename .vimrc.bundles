@@ -91,7 +91,7 @@
     " In your .vimrc.before.local file
     " list only the plugin groups you will use
     if !exists('g:spf13_bundle_groups')
-        let g:spf13_bundle_groups=['general', 'writing', 'neocomplcache', 'programming', 'php', 'ruby', 'python', 'twig', 'javascript', 'html', 'misc',]
+        let g:spf13_bundle_groups=['general', 'youcompleteme', 'programming', 'python', 'haskell', 'html']
     endif
 
     " To override all the included bundles, add the following to your
@@ -150,13 +150,13 @@
             " Pick one of the checksyntax, jslint, or syntastic
             Bundle 'scrooloose/syntastic'
             Bundle 'tpope/vim-fugitive'
-            Bundle 'mattn/webapi-vim'
+            "Bundle 'mattn/webapi-vim'
             Bundle 'mattn/gist-vim'
             Bundle 'scrooloose/nerdcommenter'
             Bundle 'godlygeek/tabular'
-            if executable('ctags')
-                Bundle 'majutsushi/tagbar'
-            endif
+            "if executable('ctags')
+                "Bundle 'majutsushi/tagbar'
+            "endif
         endif
     " }
 
@@ -239,7 +239,7 @@
             Bundle 'amirh/HTML-AutoCloseTag'
             Bundle 'hail2u/vim-css3-syntax'
             Bundle 'gorodinskiy/vim-coloresque'
-            Bundle 'tpope/vim-haml'
+            "Bundle 'tpope/vim-haml'
         endif
     " }
 
