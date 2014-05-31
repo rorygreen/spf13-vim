@@ -104,7 +104,6 @@
             Bundle 'scrooloose/nerdtree'
             Bundle 'altercation/vim-colors-solarized'
             "Bundle 'spf13/vim-colors'
-            Bundle 'chriskempson/base16-vim'
             Bundle 'tpope/vim-surround'
             "Bundle 'spf13/vim-autoclose'
             "Bundle 'kien/ctrlp.vim'
@@ -228,8 +227,8 @@
             Bundle 'Twinside/vim-haskellFold'
             "Bundle 'lukerandall/haskellmode-vim'
             Bundle 'eagletmt/neco-ghc'
-            "Bundle 'eagletmt/ghcmod-vim'
-            "Bundle 'Shougo/vimproc'
+            Bundle 'eagletmt/ghcmod-vim'
+            Bundle 'Shougo/vimproc'
             Bundle 'adinapoli/cumino'
             Bundle 'bitc/vim-hdevtools'
         endif
